@@ -11,16 +11,29 @@ import UIKit
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
    
     @IBOutlet var tableView: UITableView!
-    var arrayOne = ["Lyn", "Kent", "Sain", "Florina", "Wil"]
+    var arrayOne = ["Outback", "Ruby Tuesday's", "Denny's", "Kapolei Kalapawai", "Wil"]
     
-
+ var restaurantImageData = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+       tableView.dataSource = self
+        tableView.delegate = self
+        
         // Do any additional setup after loading the view, typically from a nib.
         //set VC as delegate
             //self.tableView.datasource = self
-    
+    //Part 6
+        
+        let path = Bundle.main.path(forResource: "Property List", ofType: "plist")
+        let dict = NSDictionary(contentsOfFile: path!)
+        
+        restaurantImageData = dict!.object(forKey:"restaurantImages") as! [String]
+        
+        
+        
+        
+        
     
     }
 
@@ -44,8 +57,21 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
 }
 
+//part 7
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath as IndexPath, animated: true)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "mySegue"
+        {
+            let s1 = segue.destination as! detailViewController
+            let imageIndex = tableView.indexPathForSelectedRow?.row
+            s1.imagePass = restaurantImageData[imageIndex!]
+        }
+    
+    }
+
 }
-
-
 
 

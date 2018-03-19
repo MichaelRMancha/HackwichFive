@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F5CA44520604AD200F0AE80 /* Property List.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7F5CA44420604AD200F0AE80 /* Property List.plist */; };
+		7F5CA4472060525C00F0AE80 /* detailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5CA4462060525C00F0AE80 /* detailViewController.swift */; };
 		7FD86EDB20449A3E003902F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD86EDA20449A3E003902F5 /* AppDelegate.swift */; };
 		7FD86EDD20449A3E003902F5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD86EDC20449A3E003902F5 /* ViewController.swift */; };
 		7FD86EE020449A3E003902F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FD86EDE20449A3E003902F5 /* Main.storyboard */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7F5CA44420604AD200F0AE80 /* Property List.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Property List.plist"; sourceTree = "<group>"; };
+		7F5CA4462060525C00F0AE80 /* detailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailViewController.swift; sourceTree = "<group>"; };
 		7FD86ED720449A3E003902F5 /* HackwichFive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackwichFive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FD86EDA20449A3E003902F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7FD86EDC20449A3E003902F5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -97,8 +101,10 @@
 		7FD86ED920449A3E003902F5 /* HackwichFive */ = {
 			isa = PBXGroup;
 			children = (
+				7F5CA44420604AD200F0AE80 /* Property List.plist */,
 				7FD86EDA20449A3E003902F5 /* AppDelegate.swift */,
 				7FD86EDC20449A3E003902F5 /* ViewController.swift */,
+				7F5CA4462060525C00F0AE80 /* detailViewController.swift */,
 				7FD86EDE20449A3E003902F5 /* Main.storyboard */,
 				7FD86EE120449A3E003902F5 /* Assets.xcassets */,
 				7FD86EE320449A3E003902F5 /* LaunchScreen.storyboard */,
@@ -234,6 +240,7 @@
 			files = (
 				7FD86EE520449A3E003902F5 /* LaunchScreen.storyboard in Resources */,
 				7FD86EE220449A3E003902F5 /* Assets.xcassets in Resources */,
+				7F5CA44520604AD200F0AE80 /* Property List.plist in Resources */,
 				7FD86EE020449A3E003902F5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,6 +268,7 @@
 			files = (
 				7FD86EDD20449A3E003902F5 /* ViewController.swift in Sources */,
 				7FD86EDB20449A3E003902F5 /* AppDelegate.swift in Sources */,
+				7F5CA4472060525C00F0AE80 /* detailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
